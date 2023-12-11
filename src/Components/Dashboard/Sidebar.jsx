@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function Sidebar() {
 
-  const [role , setRole] = useState(false)
+  const [role , setRole] = useState(true)
 
   return (
     <section className='relative'>
