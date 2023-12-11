@@ -3,9 +3,9 @@ import Subscription from "../Components/MainPage/Subscription";
 import WelcomeSection from "../Components/MainPage/WelcomeSection";
 import DocumentShowcase from "../Components/MainPage/DocumentShowcase";
 import Contact from "../Components/Form/Contact";
-import JobInfo from "../Components/MainPage/jobinfo";
+import JobInfo from "../Components/MainPage/Jobinfo";
 import Title from "../Components/Global Ui/Title";
-import CategoryBoxes from "../Components/MainPage/categoryBoxes";
+import CategoryBoxes from "../Components/MainPage/CategoryBoxes";
 import ProductsShowcase from "../Components/MainPage/ProductsShowcase";
 import EmailBox from "../Components/MainPage/EmailBox";
 
