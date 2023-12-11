@@ -1,7 +1,7 @@
 import { ArrowRightCircleIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
-import Product from "../Global Ui/product";
+import Product from "../Global Ui/Product";
 
 export default function ProductsShowcase() {
 
