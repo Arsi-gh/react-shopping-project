@@ -18,7 +18,7 @@ import Subscription from './Pages/Subscription'
 import Documents from './Pages/Documents'
 import Products from './Pages/Products'
 import Product from './Pages/Product'
-import Login from './Pages/authentication/login'
+import Login from './Pages/authentication/Login'
 import Signup from './Pages/authentication/Signup'
 import AuthenticationLayout from './Layout/AuthenticationLayout'
 
