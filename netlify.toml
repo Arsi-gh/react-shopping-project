@@ -1,0 +1,2 @@
+command = "next build && next export"
+publish = "out"
