@@ -1,7 +1,7 @@
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import BasketItem from "./BasketItem";
 
-export default function BasketFirstPart() {
+export const BasketFirstPart = () => {
   return (
     <>
       <h3 className="font-bold text-lg flex gap-2 items-center">

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BasketFirstPart from "../components/Basket/BasketFirstPart";
+import {BasketFirstPart} from "../Components/Basket/BasketFirstPart"
 import BasketSecondPart from "../Components/Basket/BasketSecondPart";
 import BasketLastPart from "../Components/Basket/BasketLastPart";
 import BasketProgress from "../Components/Basket/BasketProgress";
