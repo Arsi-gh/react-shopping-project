@@ -2,12 +2,12 @@ import { BriefcaseIcon, DocumentTextIcon, MagnifyingGlassCircleIcon, SparklesIco
 import Subscription from "../Components/MainPage/Subscription";
 import WelcomeSection from "../Components/MainPage/WelcomeSection";
 import DocumentShowcase from "../Components/MainPage/DocumentShowcase";
-import EmailBox from "../Components/MainPage/emailBox";
 import Contact from "../Components/Form/Contact";
 import JobInfo from "../Components/MainPage/jobinfo";
 import Title from "../Components/Global Ui/Title";
 import CategoryBoxes from "../Components/MainPage/categoryBoxes";
 import ProductsShowcase from "../Components/MainPage/ProductsShowcase";
+import EmailBox from "../Components/MainPage/EmailBox";
 
 export default function Index() {
     
