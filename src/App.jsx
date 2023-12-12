@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route , Routes } from 'react-router-dom'
 import MainLayout from './Layout/MainLayout'
 import DashboardLayout from './Layout/DashboardLayout'
 import MainDashboard from './Components/Dashboard/User/MainDashboard'
@@ -23,7 +23,6 @@ import Signup from './Pages/authentication/Signup'
 import AuthenticationLayout from './Layout/AuthenticationLayout'
 
 function App() {
-
   return (
     <Routes>
         <Route path="/" element={<MainLayout/>}>
@@ -45,7 +44,7 @@ function App() {
             <Route path="/dashboard/orders" element={<OrdersPage/>} />
             <Route path="/dashboard/edit-account" element={<EditAccountPage/>}/>
             <Route path="/dashboard/tickets" element={<TicketsPage/>} />
-            <Route path="/dashboard/agents" />
+            <Route path="/dashboard/agents"/>
           </Route>
         </Route>
         <Route path="/login" element={<AuthenticationLayout><Login/></AuthenticationLayout>} />

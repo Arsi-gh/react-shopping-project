@@ -3,7 +3,7 @@ import { ShoppingCartIcon, UserCircleIcon } from "@heroicons/react/24/solid"
 import { useEffect, useRef, useState } from "react"
 import { NavLink } from 'react-router-dom'
 
-export default function Navbar() {
+export default function Navbar({sideDisplayHandler}) {
 
     const [isLogged , setIsLogged] = useState(false)
     
@@ -16,7 +16,7 @@ export default function Navbar() {
       <nav className="bg-white bg-opacity-60 backdrop-blur-2xl flex items-center justify-between p-3 mb-[1rem] sticky top-0 z-30 font-semibold">
         <div className='flex ml-6'>
           <NavLink to="/" className='cursor-pointer max-md:hidden'>Logo</NavLink>
-          <button className='hidden max-md:block'>
+          <button onClick={() => sideDisplayHandler(true)} className='hidden max-md:block'>
             <Bars3BottomLeftIcon className='w-[2.4rem]'/>
           </button>
           <ul className='ml-20 flex items-center gap-2 gap-x-8 max-md:hidden'>

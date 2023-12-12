@@ -20,8 +20,8 @@ export default function ProductsShowcase() {
   }
 
   return (
-    <section className="mx-20 h-[24rem] mt-[5rem] mb-[2rem] bg-zinc-200 flex rounded-xl max-sm:flex-col-reverse max-sm:to-gray-400  max-sm:h-fit min-w-[10rem] max-sm:mx-[2rem] max-sm:mt-[5rem]">
-        <div ref={prodsConRef} className="w-4/5 p-4 xl:gap-x-6 py-8 gap-3 flex overflow-hidden scroll-smooth max-sm:w-full max-sm:gap-x-10 max-sm:px-10">
+    <section className="mx-20 h-[24rem] mt-[5rem] mb-[2rem] bg-zinc-200 flex rounded-xl max-lg:hidden">
+        <div ref={prodsConRef} className="w-4/5 p-4 xl:gap-x-6 py-8 gap-3 flex overflow-hidden scroll-smooth">
             <Product/>
             <Product/>
             <Product/>

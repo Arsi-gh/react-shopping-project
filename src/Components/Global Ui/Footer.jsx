@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
     return (
-        <footer className="mt-20 m-auto bg-gradient-to-t from-neutral-200 to-neutral-300 rounded-t-[3rem] overflow-hidden">
+        <footer className="mt-20 mx-auto bg-gradient-to-t from-neutral-200 to-neutral-300 rounded-t-[3rem] overflow-hidden">
           <div className="max-w-[1600px] flex flex-col m-auto">
             <div className="w-full flex flex-wrap h-fit justify-between gap-[1rem] gap-x-[6rem] p-[2rem] px-[4rem] max-sm:flex-col">
               <div className="flex-1">
@@ -10,10 +12,18 @@ export default function Footer() {
               <div className="flex-1 h-[10rem]">
                 <h3 className="-ml-[1rem] m-[0.5rem] font-bold text-lg">Categories</h3>
                 <ul>
-                  <li className="cursor-pointer list-disc">Products</li>
-                  <li className="cursor-pointer list-disc">Subscribtion</li>
-                  <li className="cursor-pointer list-disc">About us</li>
-                  <li className="cursor-pointer list-disc">Contact us</li>
+                  <li className="cursor-pointer list-disc">
+                    <Link to="/products" className="cursor-pointer list-disc">Products</Link>
+                  </li>
+                  <li className="cursor-pointer list-disc">
+                    <Link to="/subscription" className="cursor-pointer list-disc">Subscribtion</Link>
+                  </li>
+                  <li className="cursor-pointer list-disc">
+                    <Link to="/aboutus" className="cursor-pointer list-disc">About us</Link>
+                  </li>
+                  <li className="cursor-pointer list-disc">
+                    <Link className="cursor-pointer list-disc">Contact us</Link>
+                  </li>
                 </ul>
               </div>
               <div className="flex-1 h-[10rem]">
