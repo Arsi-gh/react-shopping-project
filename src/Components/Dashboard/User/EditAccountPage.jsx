@@ -36,18 +36,18 @@ const MainInfos = ({displayPass, displayEmail , displayPhone}) => {
     } , [])
 
     return (
-        <div className="flex flex-wrap flex-1 items-start content-start bg-zinc-200 rounded-md p-2 gap-3 h-full max-sm:w-full">
-            <h3 className="w-full font-bold text-lg px-2 flex gap-2 items-center"><InformationCircleIcon className="w-[1.5rem]"/>Main infos</h3>
+        <div className="flex flex-wrap flex-1 items-start content-start bg-zinc-100 rounded-md p-2 gap-3 h-full max-sm:w-full">
+            <h3 className="w-full font-semibold text-lg px-2 flex gap-2 items-center"><InformationCircleIcon className="w-[1.5rem]"/>Main infos</h3>
             <input value={user?.fullname && user.fullname} className="flex-1 rounded-lg p-2 px-4 shadow-customeTwo" type="text" placeholder="First name" />
             <input className="flex-1 rounded-lg p-2 px-4 shadow-customeTwo" type="text" placeholder="Last name"/>
             <input className="flex-1 rounded-lg p-2 px-4 shadow-customeTwo" type="number" placeholder="National code"/>
             <input className="flex-1 rounded-lg p-2 px-4 shadow-customeTwo" type="text" placeholder="Job"/>
             <input className="w-full rounded-lg p-2 px-4 shadow-customeTwo" type="date" placeholder="Birth date"/>
             <span className="w-full h-[1px] bg-gray-300"></span>
-            <h3 className="w-full font-bold text-lg px-2 flex gap-2 items-center"><MapPinIcon className="w-[1.5rem]"/>Add location</h3>
+            <h3 className="w-full font-semibold text-lg px-2 flex gap-2 items-center"><MapPinIcon className="w-[1.5rem]"/>Add location</h3>
             <LocationForm/>
             <span className="w-full h-[1px] bg-gray-300"></span>
-            <h3 className="w-full font-bold text-lg px-2 flex gap-2 items-center"><LockClosedIcon className="w-[1.5rem]"/>Need verification</h3>
+            <h3 className="w-full font-semibold text-lg px-2 flex gap-2 items-center"><LockClosedIcon className="w-[1.5rem]"/>Need verification</h3>
             <VerificationChanges displayPass={displayPass} displayEmail={displayEmail} displayPhone={displayPhone}/>
         </div>
     )
@@ -56,19 +56,19 @@ const MainInfos = ({displayPass, displayEmail , displayPhone}) => {
 const VerificationChanges = ({displayPass, displayEmail , displayPhone}) => {
     return (
         <>
-            <div onClick={() => displayPhone(true)} className="flex w-full cursor-pointer bg-zinc-100 items-center justify-between p-2 rounded-lg shadow-customeTwo hover:bg-slate-200 max-sm:text-sm"> 
+            <div onClick={() => displayPhone(true)} className="flex w-full cursor-pointer bg-white items-center justify-between p-2 rounded-lg shadow-customeTwo hover:bg-zinc-50 max-sm:text-sm"> 
                 <p>Phone number : 09134545689</p>
                 <div className="flex gap-2">
                     <PencilSquareIcon className="w-[1.5rem] cursor-pointer max-sm:w-[1.3rem]"/>
                 </div>
             </div>
-            <div onClick={() => displayEmail(true)} className="flex w-full cursor-pointer bg-zinc-100 items-center justify-between p-2 rounded-lg shadow-customeTwo hover:bg-slate-200 max-sm:text-sm"> 
+            <div onClick={() => displayEmail(true)} className="flex w-full cursor-pointer bg-white items-center justify-between p-2 rounded-lg shadow-customeTwo hover:bg-zinc-50 max-sm:text-sm"> 
                 <p>Email : arsalanghoochani15@gmail.com</p>
                 <div className="flex gap-2">
                     <PencilSquareIcon className="w-[1.5rem] cursor-pointer max-sm:w-[1.3rem]"/>
                 </div>
             </div>
-            <div onClick={() => displayPass(true)} className="flex w-full cursor-pointer bg-zinc-100 items-center justify-between p-2 rounded-lg shadow-customeTwo hover:bg-slate-200 max-sm:text-sm"> 
+            <div onClick={() => displayPass(true)} className="flex w-full cursor-pointer bg-white items-center justify-between p-2 rounded-lg shadow-customeTwo hover:bg-zinc-50 max-sm:text-sm"> 
                 <p>Password : *****</p>
                 <div className="flex gap-2">
                     <PencilSquareIcon className="w-[1.5rem] cursor-pointer max-sm:w-[1.3rem]"/>
@@ -80,8 +80,8 @@ const VerificationChanges = ({displayPass, displayEmail , displayPhone}) => {
 
 const LocationPart = () => {
     return (
-        <div className="flex-1 p-2 rounded-lg bg-gray-200 flex flex-wrap gap-1 content-start">
-            <h3 className="w-full font-bold text-lg px-2 flex gap-2 items-center"><MapIcon className="w-[1.5rem]"/>Your locations</h3>
+        <div className="flex-1 p-2 rounded-lg bg-gray-100 flex flex-wrap gap-1 content-start">
+            <h3 className="w-full font-semibold text-lg px-2 flex gap-2 items-center"><MapIcon className="w-[1.5rem]"/>Your locations</h3>
             <div className="w-full p-1 rounded-lg flex flex-col gap-2 overflow-scroll">
                 <LocationItem/>
                 <LocationItem/>
@@ -121,7 +121,7 @@ const LocationForm = () => {
 
 const LocationItem = () => {
  return (
-    <div className="bg-slate-50 p-2 rounded-lg shadow-customeTwo max-sm:text-sm">
+    <div className="bg-white p-2 rounded-lg shadow-customeTwo max-sm:text-sm">
         <div className="flex gap-2 items-center">
           <MapPinIcon className='w-[2rem] p-1 rounded-md bg-green-400 text-white max-sm:w-[1.5rem]'/>
           <strong>IR</strong>
@@ -129,7 +129,7 @@ const LocationItem = () => {
           <TrashIcon className="w-[2rem] p-1 rounded-md bg-red-400 text-white cursor-pointer max-sm:w-[1.5rem]"/>
           <PencilSquareIcon className="w-[2rem] p-1 rounded-md bg-blue-400 text-white cursor-pointer max-sm:w-[1.5rem]"/>
         </div>
-        <p className="mt-2 pt-3 border-t-2">Fereshte Street , Golbahar Alley , Mehrnoosh apartment , third unit</p>
+        <p className="mt-2 pt-3 border-t-[1px]">Fereshte Street , Golbahar Alley , Mehrnoosh apartment , third unit</p>
     </div>
  )
 }

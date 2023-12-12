@@ -15,30 +15,30 @@ export default function Subscription() {
 const SubSelection = () => {
     return (
         <div className="flex rounded-xl bg-gradient-to-r overflow-hidden my-12 mx-auto w-fit shadow-customeFive max-md:flex-col">
-            <div className="flex flex-col p-2 gap-4 w-[18rem] font-bold text-neutral-600 border-r-[1px] border-zinc-300 max-md:border-0 max-md:w-[100%]">
+            <div className="flex flex-col p-2 gap-4 w-[18rem] font-semibold text-neutral-600 border-r-[1px] border-zinc-300 max-md:border-0 max-md:w-[100%]">
                 <h3 className="text-[2.3rem] m-4 max">Select your Sub tier</h3>
-                <button className="flex justify-between p-2 bg-green-500 text-white rounded-lg hover:from-zinc-300 hover:to-zinc-200">
+                <button className="flex justify-between p-2 bg-green-500 text-white rounded-lg shadow-customeOne hover:from-zinc-300">
                     <p>Buy sub</p>
                     <p>30 $</p>
                 </button>
             </div>
             <div className="flex gap-2 p-2 max-sm:flex-col">
-                 <ul className="bg-gradient-to-l from-zinc-200 to-zinc-100 shadow-customeTwo flex flex-col gap-2 p-2 rounded-lg bg-gren-500 cursor-pointer  outline-2 outline-green-500 outline-offset-2 hover:from-white hover:to-white">
-                    <h3 className="font-bold text-lg">Tier 1</h3>
+                 <ul className="shadow-customeTwo flex flex-col gap-2 p-2 rounded-lg bg-gren-500 cursor-pointer  outline-2 outline-green-500 outline-offset-2 hover:border-2 border-green-500 box-border">
+                    <h3 className="font-semibold text-lg">Tier 1</h3>
                     <li>1 month</li>
                     <li>10 free transport</li>
                     <li>5-10 % cash back</li>
                     <li>least 10 special offers</li>
                  </ul>
-                 <ul className="bg-gradient-to-l from-zinc-200 to-zinc-100 shadow-customeTwo flex flex-col gap-2 p-2 rounded-lg bg-gren-500 cursor-pointer  outline-2 outline-green-500 outline-offset-2 hover:from-white hover:to-white">
-                    <h3 className="font-bold text-lg">Tier 2</h3>
+                 <ul className="shadow-customeTwo flex flex-col gap-2 p-2 rounded-lg bg-gren-500 cursor-pointer  outline-2 outline-green-500 outline-offset-2 hover:border-2 border-green-500 box-border">
+                    <h3 className="font-semibold text-lg">Tier 2</h3>
                     <li>2 months</li>
                     <li>15 free transport</li>
                     <li>10-15 % cash back</li>
                     <li>least 15 special offers</li>
                  </ul>
-                 <ul className="bg-gradient-to-l from-zinc-200 to-zinc-100 shadow-customeTwo flex flex-col gap-2 p-2 rounded-lg bg-gren-500 cursor-pointer  outline-2 outline-green-500 outline-offset-2 hover:from-white hover:to-white">
-                    <h3 className="font-bold text-lg">Tier 3</h3>
+                 <ul className="shadow-customeTwo flex flex-col gap-2 p-2 rounded-lg bg-gren-500 cursor-pointer  outline-2 outline-green-500 outline-offset-2 hover:border-2 border-green-500 box-border">
+                    <h3 className="font-semibold text-lg">Tier 3</h3>
                     <li>3 months</li>
                     <li>20 free transport</li>
                     <li>15-20 % cash back</li>
@@ -51,36 +51,36 @@ const SubSelection = () => {
 
 const SubFeatures = () => {
     return (
-        <div className="flex gap-2 text-lg font-bold text-neutral-700 flex-wrap w-3/4 max-sm:text-sm max-sm:w-full">
-            <div className="w-fit flex gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
+        <div className="flex gap-2 text-lg font-semibold text-neutral-700 flex-wrap w-3/4 max-sm:text-sm max-sm:w-full">
+            <div className="w-fit flex shadow-2xl gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
                 <TruckIcon className="w-[2rem]"/>
                 <p>limited free transports</p>
             </div>
-            <div className="w-fit flex gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
+            <div className="w-fit flex shadow-2xl gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
                 <MoonIcon className="w-[2rem]"/>
                 <p>All time delivery</p>
             </div>
-            <div className="w-fit flex gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
+            <div className="w-fit flex shadow-2xl gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
                 <RocketLaunchIcon className="w-[2rem]"/>
                 <p>Fast travel</p>
             </div>
-            <div className="w-fit flex gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
+            <div className="w-fit flex shadow-2xl gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
                 <GiftIcon className="w-[2rem]"/>
                 <p>Free gifts</p>
             </div>
-            <div className="w-fit flex gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
+            <div className="w-fit flex shadow-2xl gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
                 <CurrencyDollarIcon className="w-[2rem]"/>
                 <p>Cash back</p>
             </div>
-            <div className="w-fit flex gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
+            <div className="w-fit flex shadow-2xl gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
                 <ReceiptRefundIcon className="w-[2rem]"/>
                 <p>More refund days</p>
             </div>
-            <div className="w-fit flex gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
+            <div className="w-fit flex shadow-2xl gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
                 <SparklesIcon className="w-[2rem]"/>
                 <p>Special offers</p>
             </div>
-            <div className="w-fit flex gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
+            <div className="w-fit flex shadow-2xl gap-2 p-2 px-4 items-center rounded-r-md border-l-4 border-green-500 bg-white">
                 <TicketIcon className="w-[2rem]"/>
                 <p>Special ticket service</p>
             </div>

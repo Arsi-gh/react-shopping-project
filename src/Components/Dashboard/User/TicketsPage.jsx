@@ -20,7 +20,6 @@ export default function TicketsPage() {
             <TicketItem/>
             <TicketItem/>
             <TicketItem/>
-            <TicketItem/>
         </div>
         {displayTicketForm && <Ticket displayHandler={setDisplayTicketForm}/>}
     </div>

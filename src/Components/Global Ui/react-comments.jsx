@@ -15,11 +15,11 @@ export default function ReactComments() {
   return (
     <div className="flex flex-col m-[1rem] mx-auto gap-[1rem] my-[2rem]">
       {question && (
-        <div className="flex flex-col w-full bg-zinc-100 rounded-lg relative p-2 text-neutral-800 shadow-customeTwo">
+        <div className="flex flex-col w-full bg-zinc-50 rounded-lg relative p-2 text-neutral-800 shadow-customeTwo">
           <div className="flex items-center gap-2 gap-x-4">
             <UserIcon className="w-[2rem] p-1 rounded-full bg-slate-200"/>
             <h3 className="flex-1">Arsalan ghoochani</h3>
-            <button className="flex gap-2 items-center p-1 px-2 bg-gray-300 rounded-lg"><ArrowUturnLeftIcon className="w-5"/> answer</button>
+            <button className="flex gap-2 items-center p-1 px-2 bg-gray-100 shadow-customeTwo rounded-lg"><ArrowUturnLeftIcon className="w-5"/> answer</button>
           </div>
           <span className="w-full my-2 h-[2px] bg-zinc-200"></span>
           <p>

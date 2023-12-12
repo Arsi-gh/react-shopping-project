@@ -21,9 +21,9 @@ export default function Product() {
           <ProdAbout/>
           <SeperatorY/>
           <div className="flex flex-col gap-4">
-            <div className="flex justify-between items-center mb-4 max-sm:flex-col gap-4 max-sm:items-start">
-              <h2 className="text-2xl font-bold">Comments</h2>
-              <button onClick={() => setCommnetDisplay(true)} className="border-2 text-green-500 border-green-400 font-bold rounded-xl p-2 px-3 w-fit flex gap-2"><ChatBubbleBottomCenterTextIcon className="w-[1.5rem]"/> Add comment</button>
+            <div className="flex justify-between items-center mb-4 gap-4">
+              <h2 className="text-2xl font-bold max-sm:text-base">Comments</h2>
+              <button onClick={() => setCommnetDisplay(true)} className="border-2 text-green-500 border-green-400 font-bold rounded-xl p-2 px-3 w-fit flex gap-2 items-center max-sm:text-sm"><ChatBubbleBottomCenterTextIcon className="w-[1.5rem]"/> Add comment</button>
             </div>
             <CommentItem/>
             <CommentItem/>
@@ -31,9 +31,9 @@ export default function Product() {
           </div>
           <SeperatorY/>
           <div className="max-md:w-full max-md:px-2">
-            <div className="flex justify-between items-center mb-10 max-sm:flex-col gap-4 max-sm:items-start">
-              <h2 className="text-2xl font-bold">Questions</h2>
-              <button onClick={() => setQuestionDisplay(true)} className="border-2 text-green-500 border-green-400 font-bold rounded-xl p-2 px-3 w-fit flex gap-2"><QuestionMarkCircleIcon className="w-[1.5rem]"/>Ask question</button>
+            <div className="flex justify-between items-center mb-10 gap-4">
+              <h2 className="text-2xl font-bold max-sm:text-base">Questions</h2>
+              <button onClick={() => setQuestionDisplay(true)} className="border-2 text-green-500 border-green-400 font-bold rounded-xl p-2 px-3 w-fit flex gap-2 items-center max-sm:text-sm"><QuestionMarkCircleIcon className="w-[1.5rem]"/>Ask question</button>
             </div>
             <ReactComments/>
             <ReactComments/>
@@ -49,7 +49,7 @@ export default function Product() {
 
 const ProdStick = () => {
     return (
-        <div className="p-2 sticky top-[5rem] max-md:relative max-md:w-full">
+        <div className="p-2 sticky md:top-[5rem] max-md:relative max-md:w-full max-sm:text-sm">
           <img className="w-[18rem] h-[20rem] shadow-customeThree bg-white rounded-xl" src="/images/welcome-section-images/2.png" alt="" />
           <ProdControls/>
         </div>

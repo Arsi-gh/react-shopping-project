@@ -38,7 +38,7 @@ function App() {
             <Route path='dashboard/users' element={<UsersList/>} />
             <Route path="/dashboard/products" element={<ProductsList/>} />
             <Route path="/dashboard/addproduct" element={<AddProdPage/>}/>
-            <Route path="/dashboard/tickets" element={<AdminTicketsPage/>}/>
+            <Route path="/dashboard/tickets" element={<TicketsPage/>}/>
             <Route path="/dashboard/transactions" element={<TransactionPage/>}/>
             <Route path="/dashboard/offcode" element={<AdminOffCodePage/>}/>
             <Route path="/dashboard/orders" element={<OrdersPage/>} />

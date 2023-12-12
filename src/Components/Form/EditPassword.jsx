@@ -1,7 +1,8 @@
 import { CheckCircleIcon, EyeIcon, EyeSlashIcon, LockClosedIcon, XCircleIcon, XMarkIcon } from "@heroicons/react/24/outline"
 import { useEffect, useState } from "react"
+import Background from "../Global Ui/Background"
 
-export default function EditPassword({toggleDisplay}) {
+export default function EditPassword({displayHandler}) {
     const [passOneInput , setPassOneInput] = useState('')
     const [passTwoInput , setPassTwoInput] = useState('')
   
@@ -54,11 +55,11 @@ export default function EditPassword({toggleDisplay}) {
   
     return (
       <>
-        <div onClick={() => toggleDisplay(false)} className="w-screen h-screen bg-zinc-800 opacity-50 fixed top-0 left-0"></div>
-        <form className="flex flex-col p-4 gap-2 rounded-lg bg-neutral-200 fixed transform -translate-x-[50%] left-[50%] sm:top-[15%] w-[25rem] max-sm:w-full  max-sm:bottom-0 max-sm:rounded-none max-sm:rounded-t-xl max-sm:p-4">
+        <Background displayHandler={displayHandler}/>
+        <form className="flex flex-col p-4 gap-2 rounded-lg bg-white fixed transform -translate-x-1/2 left-1/2 z-30 sm:top-1/2 sm:-translate-y-1/2 w-[25rem] max-sm:w-full  max-sm:bottom-0 max-sm:rounded-none max-sm:rounded-t-xl max-sm:p-4">
           <div className="flex items-center justify-between">
             <h4 className="font-bold flex gap-2"><LockClosedIcon className="w-[1.5rem]"/> Change password</h4>
-            <XMarkIcon onClick={() => toggleDisplay(false)} className="w-[1.5rem] cursor-pointer"/>
+            <XMarkIcon onClick={() => displayHandler(false)} className="w-[1.5rem] cursor-pointer"/>
           </div>
           <span className="w-full h-[1px] bg-zinc-300 my-2"></span>
           <label className="pl-1" htmlFor="first-pass">Enter new password</label>
@@ -83,7 +84,7 @@ export default function EditPassword({toggleDisplay}) {
             {passTwoStat ? <EyeIcon className="w-[1.5rem] absolute top-2 right-2"/> : <EyeSlashIcon className="w-[1.5rem] absolute top-2 right-2"/>}
           </span>
          </div>
-         <button className="mt-2 p-2 bg-green-500 text-white font-bold rounded-lg">Submit password</button>
+         <button className="mt-2 p-2 bg-green-500 text-white font-semibold rounded-lg">Submit password</button>
         </form>
       </>
     )

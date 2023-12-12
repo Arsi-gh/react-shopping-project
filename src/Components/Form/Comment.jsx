@@ -22,9 +22,9 @@ export default function Comment ({displayHandler})  {
     return (
         <>
             <div onClick={() => displayHandler(false)} className="w-screen h-screen bg-zinc-800 opacity-50 fixed top-0 left-0 z-40"></div>
-            <form className="flex flex-col max-h-[45rem] p-4 gap-2 gap-y-4 rounded-lg bg-zinc-100 fixed transform -translate-x-[50%] left-[50%] sm:top-[5%]  w-[25rem] overflow-auto max-sm:w-full max-sm:max-h-screen  max-sm:bottom-0 max-sm:rounded-t-3xl max-sm:p-4 z-50">
+            <form className="flex flex-col max-h-[45rem] p-4 gap-2 gap-y-4 rounded-lg bg-zinc-100 fixed transform -translate-x-1/2 left-1/2 sm:top-1/2 sm:-translate-y-1/2  w-[25rem] overflow-auto max-sm:w-full max-sm:max-h-screen  max-sm:bottom-0 max-sm:rounded-t-3xl max-sm:p-4 z-50">
               <div className="flex items-center justify-between">
-                <h4 className="font-bold">Write comment</h4>
+                <h4 className="font-semibold">Write comment</h4>
                 <XMarkIcon onClick={() => displayHandler(false)} className="w-[1.5rem] cursor-pointer"/>
               </div>
               <span className=" h-[1px] bg-zinc-300"></span>
@@ -47,7 +47,7 @@ const PointCon = () => {
 
     return (
         <>
-            <label htmlFor="">how much will us give point</label>
+            <label className="font-semibold" htmlFor="">Rate this product from 1 to 5 :</label>
             <div className="w-full flex justify-between items-center">
                 <div className="flex-1 flex">
                     <StarIcon onClick={() => setPoint(1)} className={`w-[2.4rem] cursor-pointer ${1 <= point ? 'text-yellow-400' : 'text-zinc-300'}  drop-shadow-sm`}/>
@@ -56,7 +56,7 @@ const PointCon = () => {
                     <StarIcon onClick={() => setPoint(4)} className={`w-[2.4rem] cursor-pointer ${4 <= point ? 'text-yellow-400' : 'text-zinc-300'}  drop-shadow-sm`}/>
                     <StarIcon onClick={() => setPoint(5)} className={`w-[2.4rem] cursor-pointer ${5 <= point ? 'text-yellow-400' : 'text-zinc-300'}  drop-shadow-sm`}/>
                 </div>
-                <span className="text-center font-bold">{pointStats[point - 1]}</span>
+                <span className="text-center font-semibold">{pointStats[point - 1]}</span>
             </div>
         </>
     )
@@ -85,7 +85,7 @@ const PositivePointsCon = () => {
         <div>
             <div className="flex gap-2 w-full">
               <input value={inputValue} onKeyUp={e => e.key == 'Enter' && handlePoints} onInput={e => setInputValue(e.target.value)} className="w-4/5 flex p-2 px-4 rounded-lg shadow-customeTwo" type="text" placeholder="Positive points"/>
-              <button onClick={handlePoints} className="flex-1 p-2 bg-green-500 text-white font-bold rounded-lg">add</button>
+              <button onClick={handlePoints} className="flex-1 p-2 bg-green-500 text-white font-semibold rounded-lg">Add</button>
             </div>
             <div className="flex gap-2 mt-4 flex-wrap">
                 {
@@ -127,7 +127,7 @@ const NegativePointsCon = () => {
         <div>
             <div className="flex gap-2 w-full">
               <input value={inputValue} onKeyUp={e => e.key == 'Enter' && handlePoints(e)}  onInput={e => setInputValue(e.target.value)} className="w-4/5 flex p-2 px-4 rounded-lg shadow-customeTwo" type="text" placeholder="Negative points"/>
-              <button onClick={handlePoints} className="flex-1 p-2 bg-green-500 text-white font-bold rounded-lg">add</button>
+              <button onClick={handlePoints} className="flex-1 p-2 bg-green-500 text-white font-semibold rounded-lg">Add</button>
             </div>
             <div className="flex gap-2 mt-4 flex-wrap">
                 {

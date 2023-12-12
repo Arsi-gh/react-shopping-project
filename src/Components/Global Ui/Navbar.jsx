@@ -13,7 +13,7 @@ export default function Navbar({sideDisplayHandler}) {
     } , [])
   
     return (
-      <nav className="bg-white bg-opacity-60 backdrop-blur-2xl flex items-center justify-between p-3 mb-[1rem] sticky top-0 z-30 font-semibold">
+      <nav className="bg-white bg-opacity-60 backdrop-blur-2xl flex items-center justify-between p-3 mb-[1rem] sticky top-0 z-20 font-semibold">
         <div className='flex ml-6'>
           <NavLink to="/" className='cursor-pointer max-md:hidden'>Logo</NavLink>
           <button onClick={() => sideDisplayHandler(true)} className='hidden max-md:block'>

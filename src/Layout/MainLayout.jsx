@@ -1,7 +1,6 @@
 import { useState } from "react"
 import Navbar from "../Components/Global Ui/Navbar"
 import { Outlet } from "react-router-dom"
-import Sidebar from "../Components/Dashboard/Sidebar"
 import Footer from "../Components/Global Ui/Footer"
 import SideNav from "../Components/Global Ui/SideNav"
 

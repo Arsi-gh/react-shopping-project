@@ -66,7 +66,7 @@ const OrdersList = () => {
 
 export function OrderItem ({children}) {
     return (
-        <div className='flex w-full gap-3 items-center justify-between p-2 rounded-md bg-zinc-100 shadow-customeTwo max-sm:text-sm'>
+        <div className='flex w-full gap-3 items-center justify-between p-2 rounded-md bg-white shadow-customeTwo max-sm:text-sm'>
             <ShoppingBagIcon className='w-[2rem] max-sm:hidden'/>
             <span className='w-[1px] h-[90%] bg-zinc-300 max-sm:hidden'></span>
             <div className='flex gap-2 items-center bg-blue-400 rounded-md text-white p-2 px-3'>
