@@ -18,23 +18,23 @@ export default function OrdersPage() {
 function OrdersCategory () {
     return (
       <div className="flex mt-2 px-2 gap-2 overflow-auto">
-        <button className='group p-2 pr-3 rounded-lg border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-bold flex gap-2 items-center max-lg:flex-1'>
+        <button className='group p-2 pr-3 rounded-lg border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-semibold flex gap-2 items-center max-lg:flex-1'>
                 <TruckIcon strokeWidth={2} className='w-[2rem] p-1 bg-blue-400 rounded-md text-white group-hover:bg-white group-hover:bg-opacity-80 group-hover:text-blue-400'/>
                 <p>On going</p>
         </button>
-        <button className='group p-2 pr-3 rounded-lg border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-white font-bold flex gap-2 items-center max-lg:flex-1'>
+        <button className='group p-2 pr-3 rounded-lg border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-white font-semibold flex gap-2 items-center max-lg:flex-1'>
                 <ShoppingBagIcon strokeWidth={2} className='w-[2rem] p-1 bg-green-400 rounded-md text-white group-hover:bg-white group-hover:bg-opacity-80 group-hover:text-green-400'/>
                 <p>Completed</p>
         </button>
-        <button className='group p-2 pr-3 rounded-lg border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white font-bold flex gap-2 items-center max-lg:flex-1'>
+        <button className='group p-2 pr-3 rounded-lg border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white font-semibold flex gap-2 items-center max-lg:flex-1'>
                 <ClockIcon strokeWidth={2} className='w-[2rem] p-1 bg-orange-400 rounded-md text-white group-hover:bg-white group-hover:bg-opacity-80 group-hover:text-orange-400'/>
                 <p>Await</p>
         </button>
-        <button className='group p-2 pr-3 rounded-lg border-2 border-red-400 text-red-400 hover:bg-red-400 hover:text-white font-bold flex gap-2 items-center max-lg:flex-1'>
+        <button className='group p-2 pr-3 rounded-lg border-2 border-red-400 text-red-400 hover:bg-red-400 hover:text-white font-semibold flex gap-2 items-center max-lg:flex-1'>
                 <XCircleIcon strokeWidth={2} className='w-[2rem] p-1 bg-red-400 rounded-md text-white group-hover:bg-white group-hover:bg-opacity-80 group-hover:text-red-400'/>
                 <p>Canceled</p>
         </button>
-        <button className='group p-2 pr-3 rounded-lg border-2 border-violet-400 text-violet-400 hover:bg-violet-400 hover:text-white font-bold flex gap-2 items-center max-lg:flex-1'>
+        <button className='group p-2 pr-3 rounded-lg border-2 border-violet-400 text-violet-400 hover:bg-violet-400 hover:text-white font-semibold flex gap-2 items-center max-lg:flex-1'>
                 <ReceiptRefundIcon strokeWidth={2} className='w-[2rem] p-1 bg-violet-400 rounded-md text-white group-hover:bg-white group-hover:bg-opacity-80 group-hover:text-violet-400'/>
                 <p>Refund</p>
         </button>
@@ -66,7 +66,7 @@ const OrdersList = () => {
 
 export function OrderItem ({children}) {
     return (
-        <div className='flex w-full gap-3 items-center justify-between p-2 rounded-md bg-white shadow-customeTwo max-sm:text-sm'>
+        <div className='flex w-full gap-3 items-center justify-between p-2 rounded-md bg-zinc-50 shadow-customeTwo max-sm:text-sm'>
             <ShoppingBagIcon className='w-[2rem] max-sm:hidden'/>
             <span className='w-[1px] h-[90%] bg-zinc-300 max-sm:hidden'></span>
             <div className='flex gap-2 items-center bg-blue-400 rounded-md text-white p-2 px-3'>

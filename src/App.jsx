@@ -1,11 +1,9 @@
 import { Route , Routes } from 'react-router-dom'
 import MainLayout from './Layout/MainLayout'
 import DashboardLayout from './Layout/DashboardLayout'
-import MainDashboard from './Components/Dashboard/User/MainDashboard'
 import UsersList from './Components/Dashboard/Admin/UsersList'
 import ProductsList from './Components/Dashboard/Admin/ProductsList'
 import AddProdPage from './Components/Dashboard/Admin/AddProdPage'
-import AdminTicketsPage from './Components/Dashboard/Admin/AdminTicketsPage'
 import TransactionPage from './Components/Dashboard/Admin/TransactionPage'
 import AdminOffCodePage from './Components/Dashboard/Admin/AdminOffCodePage'
 import OrdersPage from './Components/Dashboard/User/OrdersPage'
@@ -21,6 +19,7 @@ import Index from './Pages/Index'
 import Login from './Pages/authentication/Login'
 import Signup from './Pages/authentication/Signup'
 import AuthenticationLayout from './Layout/AuthenticationLayout'
+import MainDashboard from './Components/Dashboard/MainDashboard'
 
 function App() {
   return (
@@ -35,7 +34,7 @@ function App() {
           <Route path="/basket" element={<Basket/>} /> 
           <Route path="/dashboard" element={<DashboardLayout/>}>
             <Route index element={<MainDashboard/>} />
-            <Route path='dashboard/users' element={<UsersList/>} />
+            <Route path='/dashboard/users' element={<UsersList/>} />
             <Route path="/dashboard/products" element={<ProductsList/>} />
             <Route path="/dashboard/addproduct" element={<AddProdPage/>}/>
             <Route path="/dashboard/tickets" element={<TicketsPage/>}/>

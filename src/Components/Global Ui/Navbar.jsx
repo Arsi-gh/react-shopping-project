@@ -1,4 +1,4 @@
-import {ArrowLeftOnRectangleIcon, ArrowRightOnRectangleIcon, Bars3BottomLeftIcon, PencilSquareIcon, PresentationChartLineIcon, ShoppingBagIcon, UserPlusIcon} from "@heroicons/react/24/outline"
+import {ArrowLeftOnRectangleIcon, ArrowRightOnRectangleIcon, Bars3BottomLeftIcon, PencilSquareIcon, PresentationChartLineIcon, ShoppingBagIcon, TicketIcon, UserIcon, UserPlusIcon} from "@heroicons/react/24/outline"
 import { ShoppingCartIcon, UserCircleIcon } from "@heroicons/react/24/solid"
 import { useEffect, useRef, useState } from "react"
 import { NavLink } from 'react-router-dom'
@@ -53,6 +53,8 @@ const NavOption = ({display , displayHandler}) => {
     const dropDownRef = useRef()
   
     const [username , setUsername] = useState('')
+
+    const [role , setRole] = useState(false)
   
     useEffect(() => {
       setUsername(document.cookie.slice(9))
@@ -64,27 +66,58 @@ const NavOption = ({display , displayHandler}) => {
   
     return (
       <ul ref={dropDownRef} onClick={() => displayHandler(false)} className={`flex-col w-[12rem] absolute rounded-lg overflow-hidden shadow-customeFour right-1 top-10 border-[1px] border-zinc-200 font-normal z-20 flex ${display ? 'flex' : 'hidden'}`}>
-        <NavLink to="/dashboard/edit-account" className='bg-white p-2 py-3 cursor-pointer hover:bg-zinc-100'>
-          <p>{username}</p>
-          <div className='flex justify-between items-center'>
-            <p>#pu214568</p>
-            <PencilSquareIcon className='w-[1.5rem]' />
-          </div>
-        </NavLink>
-        <NavLink to="/dashboard" className='bg-white border-t-[1px] border-zinc-200 flex gap-2 justify-between items-center p-2 cursor-pointer hover:bg-zinc-100'>
-          Dashboard
-          <PresentationChartLineIcon className='w-[1.5rem]'/>
-        </NavLink>
-        <NavLink to="/dashboard/orders" className='bg-white border-t-[1px] border-zinc-200 flex gap-2 justify-between items-center p-2 cursor-pointer hover:bg-zinc-100'>
-          Orders
-          <ShoppingBagIcon className='w-[1.5rem]'/>
-        </NavLink>
+        {role ? <UsersOptions/> : <AdminOptions/>}
         <li onClick={logoutFn} className='bg-white border-t-[1px] border-zinc-200 flex gap-2 justify-between items-center p-2 cursor-pointer hover:bg-zinc-100'>
           Log out
           <ArrowRightOnRectangleIcon className='w-[1.5rem]'/>
         </li>
       </ul>
     )
+}
+
+const UsersOptions = ({username}) => {
+  return (
+    <>
+    <NavLink to="/dashboard/edit-account" className='bg-white p-2 py-3 cursor-pointer hover:bg-zinc-100'>
+          <p>{username}</p>
+          <div className='flex justify-between items-center'>
+            <p>#pu214568</p>
+            <PencilSquareIcon className='w-[1.5rem]' />
+          </div>
+    </NavLink>
+    <NavLink to="/dashboard" className='bg-white border-t-[1px] border-zinc-200 flex gap-2 justify-between items-center p-2 cursor-pointer hover:bg-zinc-100'>
+      Dashboard
+      <PresentationChartLineIcon className='w-[1.5rem]'/>
+    </NavLink>
+    <NavLink to="/dashboard/orders" className='bg-white border-t-[1px] border-zinc-200 flex gap-2 justify-between items-center p-2 cursor-pointer hover:bg-zinc-100'>
+      Orders
+      <ShoppingBagIcon className='w-[1.5rem]'/>
+    </NavLink>
+    </>
+  )
+}
+
+const AdminOptions = ({username}) => {
+  return (
+    <>
+    <NavLink to="/dashboard" className='bg-white flex gap-2 justify-between items-center p-2 cursor-pointer hover:bg-zinc-100'>
+      Dashboard
+      <PresentationChartLineIcon className='w-[1.5rem]'/>
+    </NavLink>
+    <NavLink to="/dashboard/products" className='bg-white border-t-[1px] flex gap-2 justify-between items-center p-2 cursor-pointer hover:bg-zinc-100'>
+      Prodcuts
+      <ShoppingBagIcon className='w-[1.5rem]'/>
+    </NavLink>
+    <NavLink to="/dashboard/users" className='bg-white border-t-[1px] flex gap-2 justify-between items-center p-2 cursor-pointer hover:bg-zinc-100'>
+      Users
+      <UserIcon className='w-[1.5rem]'/>
+    </NavLink>
+    <NavLink to="/dashboard/tickets" className='bg-white border-t-[1px] flex gap-2 justify-between items-center p-2 cursor-pointer hover:bg-zinc-100'>
+      Tickets
+      <TicketIcon className="w-[1.5rem]"/>
+    </NavLink>
+    </>
+  )
 }
   
 const AuthenticateBtns = () => {

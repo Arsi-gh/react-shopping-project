@@ -4,18 +4,18 @@ import { NavLink } from 'react-router-dom'
 
 export default function Sidebar() {
 
-  const [role , setRole] = useState(true)
+  const [role , setRole] = useState(false)
 
   return (
     <section className='relative'>
         <div className='w-[16rem] shadow-2xl flex justify-between items-center gap-2 bg-white p-2 rounded-xl max-md:hidden'>
             <UserIcon strokeWidth={1.5} className='w-[4rem] p-3 rounded-xl bg-neutral-100'/>
-            <div className='w-full'>
+            <div className='w-full font-semibold'>
                 <h2>Hello Arsalan</h2>
                 <p>Welcome to dashboard</p>
             </div>        
         </div>
-        <ul className='mt-2 bg-white shadow-customeFour flex flex-col rounded-xl overflow-hidden max-md:sticky md:top-2 max-sm:m-0 max-sm:flex-row max-sm:shadow-customeFour max-sm:fixed max-sm:bottom-0 max-sm:left-0 max-sm:rounded-none max-sm:rounded-t-3xl max-sm:h-fit max-sm:w-full'>
+        <ul className='mt-2 font-semibold bg-white shadow-customeFour flex flex-col rounded-xl overflow-hidden max-md:sticky md:top-2 max-sm:m-0 max-sm:flex-row max-sm:shadow-customeFour max-sm:fixed max-sm:bottom-0 max-sm:left-0 max-sm:rounded-none max-sm:rounded-t-3xl max-sm:h-fit max-sm:w-full'>
             {role ? <UserOptions/> : <AdminOptions/>}
             <button className='p-4 cursor-pointer hover:bg-zinc-50 flex justify-between items-center max-md:w-fit max-sm:flex-1 max-sm:justify-center'>
               <p className='max-md:hidden'>Log out</p>
@@ -52,7 +52,11 @@ const UserOptions = () => {
 const AdminOptions = () => {
   return (
     <>
-        <NavLink to="/dashboard" className='bg-white p-4 cursor-pointer hover:bg-zinc-50 flex justify-between items-center max-md:w-fit max-sm:flex-1 max-sm:justify-center max-sm:flex-row-reverse max-sm:gap-2'>
+        <NavLink to="/dashboard/" className='bg-white p-4 cursor-pointer hover:bg-zinc-50 flex justify-between items-center max-md:w-fit max-sm:flex-1 max-sm:justify-center max-sm:flex-row-reverse max-sm:gap-2'>
+          <p className='max-md:hidden'>Dashboard</p>
+          <PresentationChartLineIcon className='w-[1.5rem]'/>
+        </NavLink>
+        <NavLink to="/dashboard/users" className='bg-white p-4 cursor-pointer hover:bg-zinc-50 flex justify-between items-center max-md:w-fit max-sm:flex-1 max-sm:justify-center max-sm:flex-row-reverse max-sm:gap-2'>
           <p className='max-md:hidden'>Users</p>
           <UsersIcon className='w-[1.5rem]'/>
         </NavLink>

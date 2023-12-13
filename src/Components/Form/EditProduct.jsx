@@ -2,14 +2,14 @@ import { ArrowUpTrayIcon, InformationCircleIcon, MinusIcon, PencilIcon, PlusIcon
 import { useState } from "react";
 import Background from "../Global Ui/Background";
 
-export default function EditProduct({toggleDisplay}) {
+export default function EditProduct({displayHandler}) {
     return (
         <>
-            <Background/>
-            <div className="flex flex-col bg-white rounded-lg fixed transform -translate-x-[50%] left-[50%] top-[10%]">
+            <Background displayHandler={displayHandler}/>
+            <div className="flex flex-col bg-white rounded-lg fixed transform -translate-x-[50%] z-30 left-[50%] top-[10%]">
               <div className="w-full gap-2 flex justify-between p-3 ">
                 <b className="flex gap-2 items-center">Edit product<PencilIcon className="w-[1.2rem]"/></b>
-                <XMarkIcon onClick={() =>toggleDisplay(false)} className="w-[1.5rem] cursor-pointer"/>
+                <XMarkIcon onClick={() =>displayHandler(false)} className="w-[1.5rem] cursor-pointer"/>
               </div>
               <span className="w-full h-[1px] bg-zinc-200"></span>
               <div className="flex p-4  max-h-[35rem] w-[41rem] flex-col flex-wrap gap-3">
