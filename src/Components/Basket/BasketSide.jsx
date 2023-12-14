@@ -17,7 +17,7 @@ export default function BasketSide({basketHandler , basketIndex}) {
             <label htmlFor="code-input">Have off code ?</label>
             <div className="flex gap-2 w-full">
                 <input placeholder="Enter here" type="text" className="flex-1 p-2 bg-zinc-100 shadow-customeTwo rounded-lg focus:bg-white focus:shadow-customeFive focus:border-[1px] border-green-500 outline-none"/>
-                <button className="bg-green-500 text-sm  text-white font-bold p-2 px-2 rounded-lg w-fit">Submit</button>
+                <button className="bg-green-500 text-sm  text-white font-semibold p-2 px-2 rounded-lg w-fit">Submit</button>
             </div>
         </div>
         <span className="w-full h-[1px] bg-zinc-300"></span>
@@ -26,7 +26,7 @@ export default function BasketSide({basketHandler , basketIndex}) {
         <p className="flex justify-between"><b>Price to pay </b>300$</p>
         <span className="w-full h-[1px] bg-zinc-300"></span>
         <button onClick={() => basketIndex != 2 && basketHandler(prev => prev+1)} className="bg-green-500  p-2 rounded-lg text-white flex justify-between items-center">
-          <b>{basketBtns[basketIndex].text}</b>
+          <p className="font-semibold">{basketBtns[basketIndex].text}</p>
           {basketBtns[basketIndex].icon}
         </button>
       </div>

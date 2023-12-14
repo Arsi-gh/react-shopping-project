@@ -6,8 +6,8 @@ const question = {
   title: "lorem",
   comment: "Lorem lorem lorem",
   answers: [
-    { id: 1, text: "lorem lorem lorem lorem oskol" },
-    { id: 2, text: "lorem lorem lorem lorem oskol" },
+    { id: 1, text: "lorem lorem lorem lorem morem" },
+    { id: 2, text: "lorem lorem lorem lorem morem" },
   ],
 };
 

@@ -14,7 +14,7 @@ export default function BasketProgress ({basketHandler , basketIndex}) {
                     <div className="flex items-center gap-2 max-md:text-sm max-md:font-thin" key={item.index}>
                         <div onClick={() => basketHandler(item.index)} className="p-1 bg-white rounded-full flex gap-2 items-center shadow-customeThree cursor-pointer">
                             {item.icon}
-                            <b className={`mr-2 ${basketIndex == item.index ? '' : 'hidden'}`}>{item.text}</b>
+                            <p className={`font-semibold mr-2 ${basketIndex == item.index ? '' : 'hidden'}`}>{item.text}</p>
                         </div>
                         { item.index + 1 < progressBar.length && <span className="w-[10rem] h-[1px] bg-zinc-400 max-md:w-[6rem] max-sm:w-[2rem]"></span>}
                     </div>
