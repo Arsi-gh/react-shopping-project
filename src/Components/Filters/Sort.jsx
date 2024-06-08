@@ -1,4 +1,4 @@
-import { AdjustmentsHorizontalIcon, CalendarIcon, ChevronDownIcon, EyeIcon, StarIcon } from '@heroicons/react/24/outline';
+import { AdjustmentsHorizontalIcon, CalendarIcon, ChatBubbleLeftRightIcon, ChevronDownIcon, EyeIcon, StarIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react'
 
 export default function Sort() {
@@ -6,8 +6,8 @@ export default function Sort() {
   const [isOpen , setIsOpen] = useState(false)
     
   return (
-    <div className="w-[15rem]  rounded-lg overflow-hidden bg-white shadow-md h-fit max-lg:w-full max-sm:w-full">
-      <button onClick={() => setIsOpen(!isOpen)} className="p-2 w-full px-4 font-bold items-center flex justify-between">
+    <div className="w-[15rem] rounded-lg overflow-hidden bg-white shadow-md h-fit max-lg:w-full max-sm:w-full">
+      <button onClick={() => setIsOpen(!isOpen)} className="p-3 w-full px-4 font-semibold items-center flex justify-between">
         <p className="flex gap-2 items-center"><AdjustmentsHorizontalIcon className="w-[1.5rem]"/>Sort</p>
         <ChevronDownIcon strokeWidth={2} className={`w-[1.3rem] cursor-pointer transition-all ${isOpen && 'rotate-180'}`}/>
       </button>
@@ -26,13 +26,8 @@ export default function Sort() {
             </li>
             <li className="flex gap-2  items-center py-2 px-4 justify-between">
               <input id="latest" type="checkbox" className="cursor-pointer"/>
-              <label htmlFor="latest" className="flex-1 cursor-pointer">latest</label>
-              <CalendarIcon className="w-[1.3rem]"/>
-            </li>
-            <li className="flex gap-2  items-center py-2 px-4 justify-between">
-              <input id="oldest" type="checkbox" className="cursor-pointer"/>
-              <label htmlFor="oldest" className="flex-1 cursor-pointer">oldest</label>
-              <CalendarIcon className="w-[1.3rem]"/>
+              <label htmlFor="latest" className="flex-1 cursor-pointer">comments</label>
+              <ChatBubbleLeftRightIcon className="w-[1.3rem]"/>
             </li>
           </ul>
         )

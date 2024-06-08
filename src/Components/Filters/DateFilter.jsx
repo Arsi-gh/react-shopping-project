@@ -14,10 +14,10 @@ export default function DateFilter() {
         {
           isOpen && (
             <ul className="top-12 rounded-lg w-[10rem] overflow-hidden shadow-customeOne absolute z-30 font-semibold">
-                <li className="p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100 border-b-[1px] border-zinc-200">All</li>
-                <li className="p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100 border-b-[1px] border-zinc-200">Today</li>
-                <li className="p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100 border-b-[1px] border-zinc-200">This week</li>
-                <li className="p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100 border-b-[1px] border-zinc-200">This month</li>
+                <li className="p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100  ">All</li>
+                <li className="p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100  ">Today</li>
+                <li className="p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100  ">This week</li>
+                <li className="p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100  ">This month</li>
                 <li className="p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100 ">This year</li>
             </ul>
           )

@@ -1,34 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-  }
-  ::-webkit-scrollbar {
-    display: hidden;
-    width: 6px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    display: hidden;
-  }
+ .custom-container {
+  @apply 2xl:max-w-screen-2xl 2xl:px-12 max-w-screen-xl mx-auto px-4 max-sm:px-2
+ }
 
-  ::-webkit-scrollbar-corner {
-    display: hidden;
-  }
+ .gradient {
+  @apply bg-gradient-to-br from-green-600 to-green-500 text-white
+ }
 
-  ::-webkit-scrollbar:horizontal{
-    height: 8px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: #c9c9c9;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #7a7a7a;
-  }
+ button {
+  @apply transition-all hover:scale-105 active:scale-95
+ }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+::-webkit-scrollbar {
+  display: hidden;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  display: hidden;
+}
+
+::-webkit-scrollbar-corner {
+  display: hidden;
+}
+
+::-webkit-scrollbar:horizontal{
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #c9c9c9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7a7a7a;
 }

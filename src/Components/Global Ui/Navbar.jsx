@@ -1,5 +1,4 @@
-import {ArrowLeftOnRectangleIcon, ArrowRightOnRectangleIcon, Bars3BottomLeftIcon, PencilSquareIcon, PresentationChartLineIcon, ShoppingBagIcon, TicketIcon, UserIcon, UserPlusIcon} from "@heroicons/react/24/outline"
-import { ShoppingCartIcon, UserCircleIcon } from "@heroicons/react/24/solid"
+import {ArrowLeftOnRectangleIcon, ArrowRightOnRectangleIcon, Bars3BottomLeftIcon, PencilSquareIcon, PresentationChartLineIcon, ShoppingBagIcon, ShoppingCartIcon, TicketIcon, UserCircleIcon, UserIcon, UserPlusIcon} from "@heroicons/react/24/outline"
 import { useEffect, useRef, useState } from "react"
 import { NavLink } from 'react-router-dom'
 
@@ -7,27 +6,27 @@ export default function Navbar({sideDisplayHandler}) {
 
     const [isLogged , setIsLogged] = useState(false)
     
-  
     useEffect(() => {
       document.cookie && setIsLogged(true)
     } , [])
   
     return (
-      <nav className="bg-white bg-opacity-60 backdrop-blur-2xl flex items-center justify-between p-3 mb-[1rem] sticky top-0 z-20 font-semibold">
-        <div className='flex ml-6'>
-          <NavLink to="/" className='cursor-pointer max-md:hidden'>Logo</NavLink>
-          <button onClick={() => sideDisplayHandler(true)} className='hidden max-md:block'>
-            <Bars3BottomLeftIcon className='w-[2.4rem]'/>
-          </button>
-          <ul className='ml-20 flex items-center gap-2 gap-x-8 max-md:hidden'>
-            <NavLink to="/products" className='cursor-pointer hover:text-green-700 hover:scale-[110%] transition-all'>Products</NavLink>
-            <NavLink to="/documents" className='cursor-pointer hover:text-green-700 hover:scale-[110%] transition-all'>Documents</NavLink>
-            <NavLink to="/subscription" className='cursor-pointer hover:text-green-700 hover:scale-[110%] transition-all'>Subscribtion</NavLink>
-            <NavLink to="/aboutus" className='cursor-pointer hover:text-green-700 hover:scale-[110%] transition-all'>About us</NavLink>
-          </ul>
-        </div>
-        {!isLogged ? <AuthenticatedBtns/> : <AuthenticateBtns/>}
-      </nav>
+      <header className="bg-white bg-opacity-60 backdrop-blur-2xl sticky top-0 z-20 mb-4 py-3">
+        <nav className="custom-container flex items-center justify-between font-semibold">
+          <div className='flex sm:ml-6 ml-2'>
+            <NavLink to="/" className='cursor-pointer max-md:hidden'>Logo</NavLink>
+            <button onClick={() => sideDisplayHandler(true)} className='hidden max-md:block'>
+              <Bars3BottomLeftIcon className='w-[2.4rem]'/>
+            </button>
+            <ul className='ml-8 flex items-center gap-2 gap-x-8 max-md:hidden'>
+              <NavLink to="/products" className='cursor-pointer hover:text-green-700 hover:scale-[110%] transition-all'>Products</NavLink>
+              <NavLink to="/documents" className='cursor-pointer hover:text-green-700 hover:scale-[110%] transition-all'>Documents</NavLink>
+              <NavLink to="/aboutus" className='cursor-pointer hover:text-green-700 hover:scale-[110%] transition-all'>About us</NavLink>
+            </ul>
+          </div>
+          {!isLogged ? <AuthenticatedBtns/> : <AuthenticateBtns/>}
+        </nav>
+      </header>
     )
 }
 
@@ -36,12 +35,12 @@ const AuthenticatedBtns = () => {
     const [isOpenOption , setIsOpenOption] = useState(false)
   
     return (
-      <div className='flex gap-2 gap-x-4'>
+      <div className='flex gap-2 sm:gap-x-3 text-neutral-800'>
         <NavLink to="/basket">
-          <ShoppingCartIcon className='w-[2.4rem]'/>
+          <ShoppingCartIcon className='w-8'/>
         </NavLink>
         <div className='relative'>
-          <UserCircleIcon id="dropDownBtn" onClick={() => setIsOpenOption(!isOpenOption)}  className='w-[2.4rem] cursor-pointer'/>
+          <UserCircleIcon id="dropDownBtn" onClick={() => setIsOpenOption(!isOpenOption)}  className='w-8 cursor-pointer'/>
           {isOpenOption && <NavOption display={isOpenOption} displayHandler={setIsOpenOption}/>}
         </div>
       </div>
@@ -65,9 +64,9 @@ const NavOption = ({display , displayHandler}) => {
     }
   
     return (
-      <ul ref={dropDownRef} onClick={() => displayHandler(false)} className={`flex-col w-[12rem] absolute rounded-lg overflow-hidden shadow-customeFour right-1 top-10 border-[1px] border-zinc-200 font-normal z-20 flex ${display ? 'flex' : 'hidden'}`}>
+      <ul ref={dropDownRef} onClick={() => displayHandler(false)} className={`flex-col z-100 w-[12rem] absolute rounded-lg overflow-hidden shadow-customeFour right-1 top-10 border-[1px] border-zinc-200 font-normal flex ${display ? 'flex' : 'hidden'}`}>
         {role ? <UsersOptions/> : <AdminOptions/>}
-        <li onClick={logoutFn} className='bg-white border-t-[1px] border-zinc-200 flex gap-2 justify-between items-center p-2 cursor-pointer hover:bg-zinc-100'>
+        <li onClick={logoutFn} className='bg-white border-t flex gap-2 justify-between items-center p-2 cursor-pointer hover:bg-zinc-100'>
           Log out
           <ArrowRightOnRectangleIcon className='w-[1.5rem]'/>
         </li>

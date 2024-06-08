@@ -7,7 +7,7 @@ export default function CategoryFilter() {
     
     return (
       <div className="w-[15rem]  rounded-lg overflow-hidden bg-white shadow-md h-fit max-lg:w-full max-sm:w-full">
-        <button onClick={() => setIsOpen(!isOpen)} className="p-2 w-full px-4  font-bold items-center flex justify-between">
+        <button onClick={() => setIsOpen(!isOpen)} className="p-3 w-full px-4  font-semibold items-center flex justify-between">
           <p className="flex gap-2 items-center"><AdjustmentsHorizontalIcon className="w-[1.5rem]"/>Category</p>
           <ChevronDownIcon strokeWidth={2} className={`w-[1.3rem] cursor-pointer transition-all ${isOpen && 'rotate-180'}`}/>
         </button>

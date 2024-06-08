@@ -1,4 +1,3 @@
-import { ToastContainer } from "react-toastify";
 
 export default function AuthenticationLayout({children}) {
     return (
@@ -7,7 +6,6 @@ export default function AuthenticationLayout({children}) {
           </section>
           <section className="w-[40%]  h-screen relative max-sm:w-[100%] flex items-center max-sm:items-start  max-sm:text-sm max-sm:h-screen max-sm:bg-white">
             {children}
-            <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" /><ToastContainer />
           </section>
         </main>
       )

@@ -8,7 +8,7 @@ export default function UsersList() {
     <div className="flex gap-4 p-2">
       <div className="flex flex-col gap-2">
         <FilterUser/>
-        <div className="bg-neutral-100 pt-2 pb-8 w-fit rounded-xl shadow-customeTwo">
+        <div className="bg-neutral-100 pt-2 pb-8 w-fit rounded-md border border-zinc-200">
           <table className="border-collapse table-auto">
             <ListHeader/>
             <tbody>

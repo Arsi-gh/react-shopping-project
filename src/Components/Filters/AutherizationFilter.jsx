@@ -14,10 +14,10 @@ export default function AutherizationFilter() {
       {
         isOpen && (
           <ul className="top-12 rounded-lg w-[9rem] overflow-hidden shadow-customeOne absolute font-semibold">
-              <li className="pl-4 flex justify-between p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100 border-b-[1px] border-zinc-200">All <Squares2X2Icon className="w-[1.5rem]"/> </li>
-              <li className="pl-4 flex justify-between p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100 border-b-[1px] border-zinc-200">User <UserIcon className="w-[1.5rem]"/> </li>
-              <li className="pl-4 flex justify-between p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100 border-b-[1px] border-zinc-200">Admin <BriefcaseIcon className="w-[1.5rem]"/> </li>
-              <li className="pl-4 flex justify-between p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100 border-b-[1px] border-zinc-200">Agent <BuildingStorefrontIcon className="w-[1.5rem]"/> </li>
+              <li className="pl-4 flex justify-between p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100  ">All <Squares2X2Icon className="w-[1.5rem]"/> </li>
+              <li className="pl-4 flex justify-between p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100  ">User <UserIcon className="w-[1.5rem]"/> </li>
+              <li className="pl-4 flex justify-between p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100  ">Admin <BriefcaseIcon className="w-[1.5rem]"/> </li>
+              <li className="pl-4 flex justify-between p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100  ">Agent <BuildingStorefrontIcon className="w-[1.5rem]"/> </li>
               <li className="pl-4 flex justify-between p-2 text-center cursor-pointer bg-zinc-50 hover:bg-zinc-100 ">Staff <UserGroupIcon className="w-[1.5rem]"/> </li>
           </ul>
         )

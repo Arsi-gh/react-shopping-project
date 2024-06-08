@@ -14,7 +14,7 @@ export default function Documents() {
         <div className="max-xl:m-[1rem]">
           <Sort/>
         </div>
-        <div className="ml-8 px-8 flex flex-wrap flex-1 gap-6 max-md:gap-2 max-md:m-0 max-md:px-0"> 
+        <div className="ml-8 px-8 flex-1 grid xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-2 grid-cols-1 max gap-6 max-md:gap-2 max-md:m-0 max-md:px-0"> 
           <DocumentItem/>
           <DocumentItem/>
           <DocumentItem/>

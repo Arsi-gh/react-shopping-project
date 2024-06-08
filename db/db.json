@@ -1,0 +1,189 @@
+{
+  "PRODUCTS": [
+    {
+      "id": 1,
+      "name": "Flora plant",
+      "img": "/images/welcome-section-images/2.png",
+      "price": 230,
+      "off": 15,
+      "category": "apartment plant",
+      "size": "20 * 45",
+      "sutes": "apartment",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi blanditiis itaque libero odit nam reprehenderit reiciendis cum pariatur distinctio animi temporibus magnam accusamus amet placeat ab est harum quia. Illo exercitationem ipsum, pariatur nobis repellendus ea similique consequuntur minima illum iusto asperiores dolorum voluptatem sed commodi, modi odio sequi doloremque nostrum dolore earum maiores ducimus molestiae. Minima, sequi quis. Delectus maiores laborum dicta ullam fugit nulla quasi? Veniam nobis et voluptates dolore cupiditate amet, labore hic tempore maxime sapiente laboriosam odit nam impedit earum aperiam, maiores blanditiis eius. Voluptates! Perspiciatis voluptas explicabo, quaerat necessitatibus unde quae non distinctio culpa fuga quos nulla iste earum, quisquam corrupti inventore corporis error? Animi incidunt sed facere, suscipit officia autem ullam quaerat cum!",
+      "commments": [],
+      "questions": []
+    },
+    {
+      "id": 2,
+      "name": "Scandinovia lofacita",
+      "img": "/images/welcome-section-images/1.png",
+      "price": 360,
+      "off": 30,
+      "category": "apartment plant",
+      "size": "10 * 25",
+      "sutes": "apartment",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi blanditiis itaque libero odit nam reprehenderit reiciendis cum pariatur distinctio animi temporibus magnam accusamus amet placeat ab est harum quia. Illo exercitationem ipsum, pariatur nobis repellendus ea similique consequuntur minima illum iusto asperiores dolorum voluptatem sed commodi, modi odio sequi doloremque nostrum dolore earum maiores ducimus molestiae. Minima, sequi quis. Delectus maiores laborum dicta ullam fugit nulla quasi? Veniam nobis et voluptates dolore cupiditate amet, labore hic tempore maxime sapiente laboriosam odit nam impedit earum aperiam, maiores blanditiis eius. Voluptates! Perspiciatis voluptas explicabo, quaerat necessitatibus unde quae non distinctio culpa fuga quos nulla iste earum, quisquam corrupti inventore corporis error? Animi incidunt sed facere, suscipit officia autem ullam quaerat cum!",
+      "commments": [],
+      "questions": []
+    },
+    {
+      "id": 3,
+      "name": "lora cactusca",
+      "img": "/images/welcome-section-images/3.png",
+      "price": 65,
+      "off": false,
+      "category": "apartment plant",
+      "size": "202 * 65",
+      "sutes": "apartment",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi blanditiis itaque libero odit nam reprehenderit reiciendis cum pariatur distinctio animi temporibus magnam accusamus amet placeat ab est harum quia. Illo exercitationem ipsum, pariatur nobis repellendus ea similique consequuntur minima illum iusto asperiores dolorum voluptatem sed commodi, modi odio sequi doloremque nostrum dolore earum maiores ducimus molestiae. Minima, sequi quis. Delectus maiores laborum dicta ullam fugit nulla quasi? Veniam nobis et voluptates dolore cupiditate amet, labore hic tempore maxime sapiente laboriosam odit nam impedit earum aperiam, maiores blanditiis eius. Voluptates! Perspiciatis voluptas explicabo, quaerat necessitatibus unde quae non distinctio culpa fuga quos nulla iste earum, quisquam corrupti inventore corporis error? Animi incidunt sed facere, suscipit officia autem ullam quaerat cum!",
+      "commments": [],
+      "questions": []
+    },
+    {
+      "id": 4,
+      "name": "Aching Spoolwood",
+      "img": "/images/welcome-section-images/6.JPG",
+      "price": 25,
+      "off": false,
+      "category": "apartment plant",
+      "size": "35 * 60",
+      "sutes": "house and apartments",
+      "desc": "Lorem ipsum dolor sit amet coro odit nam reprehenderii temporibus magnam accusamus amet placeat ab est harum quia. Illo exercitationem ipsum, pariatur nobis repellendus ea similique consequuntur minima illum iusto asperiores dolorum voluptatem sed commodi, modi odio sequi doloremque nostrum dolore earum maiores ducimus molestiae. Minima, sequi quis. Delectus maiores laborum dicta ullam fugit nulla quasi? Veniam nobis et voluptates dolore cupiditate amet, labore hic tempore maxime sapiente laboriosam odit nam impedit earum aperiam, maiores blanditiis eius. Voluptates! Perspiciatis voluptas explicabo, quaerat necessitatibus unde quae non distinctio culpa fuga quos nulla iste earum, quisquam corrupti inventore corporis error? Animi incidunt sed facere, suscipit officia autem ullam quaerat cum!",
+      "commments": [],
+      "questions": []
+    },
+    {
+      "id": 5,
+      "name": "Crimson Sugarplum",
+      "img": "/images/welcome-section-images/7.JPG",
+      "price": 75,
+      "off": 50,
+      "category": "apartment plant",
+      "size": "60 * 20",
+      "sutes": "apartments with no light",
+      "desc": "Lorem ipsum dolor sit amet  libero odit nam reprehenderit reiciendis cum pariatur distinctio animi temporibus magnam accusamus amet placeat ab est harum quia. Illo exercitationem ipsum, pariatur nobis repellendus ea similique consequuntur minima illum iusto asperiores dolorum voluptatem sed commodi, modi odio sequi doloremque nostrum dolore earum maiores ducimus molestiae. Minima, sequi quis. Delectus maiores laborum dicta ullam fugit nulla quasi? Veniam nobis et voluptates dolore cupiditate amet, labore hic tempore maxime sapiente laboriosam odit nam impedit earum aperiam, maiores blanditiis eius. Voluptates! Perspiciatis voluptas explicabo, quaerat necessitatibus unde quae non distinctio culpa fuga quos nulla iste earum, quisquam corrupti inventore corporis error? Animi incidunt sed facere, suscipit officia autem ullam quaerat cum!",
+      "commments": [],
+      "questions": []
+    },
+    {
+      "id": 6,
+      "name": "Shrine Garlic",
+      "img": "/images/welcome-section-images/8.JPG",
+      "price": 65,
+      "off": false,
+      "category": "apartment plant",
+      "size": "90 * 60",
+      "sutes": "apartment",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi blanditiis itaque libero odit nam reprehenderit reiciendis cum pariatur distinctio animi temporibus magnam accusamus amet placeat ab est harum quia. Illo exercitationem ipsum, pariatur nobis repellendus ea similique consequuntur minima illum iusto asperiores dolorum voluptatem sed commodi, modi odio sequi doloremque nostrum dolore earum maiores ducimus molestiae. Minima, sequi quis. Delectus maiores laborum dicta ullam fugit nulla quasi? Veniam nobis et voluptates dolore cupiditate amet, labore hic tempore maxime sapiente laboriosam odit nam impedit earum aperiam, maiores blanditiis eius. Voluptates! Perspiciatis voluptas explicabo, quaerat necessitatibus unde quae non distinctio culpa fuga quos nulla iste earum, quisquam corrupti inventore corporis error? Animi incidunt sed facere, suscipit officia autem ullam quaerat cum!",
+      "commments": [],
+      "questions": []
+    },
+    {
+      "id": 7,
+      "name": "Bronze Hops",
+      "img": "/images/welcome-section-images/9.JPG",
+      "price": 65,
+      "off": false,
+      "category": "apartment plant",
+      "size": "50 * 50",
+      "sutes": "apartment",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi blanditiis itaque libero odit nam reprehenderit reiciendis cum pariatur distinctio animi temporibus magnam accusamus amet placeat ab est harum quia. Illo exercitationem ipsum, pariatur nobis repellendus ea similique consequuntur minima illum iusto asperiores dolorum voluptatem sed commodi, modi odio sequi doloremque nostrum dolore earum maiores ducimus molestiae. Minima, sequi quis. Delectus maiores laborum dicta ullam fugit nulla quasi? Veniam nobis et voluptates dolore cupiditate amet, labore hic tempore maxime sapiente laboriosam odit nam impedit earum aperiam, maiores blanditiis eius. Voluptates! Perspiciatis voluptas explicabo, quaerat necessitatibus unde quae non distinctio culpa fuga quos nulla iste earum, quisquam corrupti inventore corporis error? Animi incidunt sed facere, suscipit officia autem ullam quaerat cum!",
+      "commments": [],
+      "questions": []
+    },
+    {
+      "id": 8,
+      "name": "Iabrosie",
+      "img": "/images/welcome-section-images/10.JPG",
+      "price": 65,
+      "off": false,
+      "category": "apartment plant",
+      "size": "78 * 90",
+      "sutes": "apartment",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi blanditiis itaque libero odit nam reprehenderit reiciendis cum pariatur distinctio animi temporibus magnam accusamus amet placeat ab est harum quia. Illo exercitationem ipsum, pariatur nobis repellendus ea similique consequuntur minima illum iusto asperiores dolorum voluptatem sed commodi, modi odio sequi doloremque nostrum dolore earum maiores ducimus molestiae. Minima, sequi quis. Delectus maiores laborum dicta ullam fugit nulla quasi? Veniam nobis et voluptates dolore cupiditate amet, labore hic tempore maxime sapiente laboriosam odit nam impedit earum aperiam, maiores blanditiis eius. Voluptates! Perspiciatis voluptas explicabo, quaerat necessitatibus unde quae non distinctio culpa fuga quos nulla iste earum, quisquam corrupti inventore corporis error? Animi incidunt sed facere, suscipit officia autem ullam quaerat cum!",
+      "commments": [],
+      "questions": []
+    },
+    {
+      "id": 9,
+      "name": "Chameleon Cornel",
+      "img": "/images/welcome-section-images/11.JPG",
+      "price": 220,
+      "off": 25,
+      "category": "apartment plant",
+      "size": "30 * 90",
+      "sutes": "apartment",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi blanditiis itaque libero odit nam reprehenderit reiciendis cum pariatur distinctio animi temporibus magnam accusamus amet placeat ab est harum quia. Illo exercitationem ipsum, pariatur nobis repellendus ea similique consequuntur minima illum iusto asperiores dolorum voluptatem sed commodi, modi odio sequi doloremque nostrum dolore earum maiores ducimus molestiae. Minima, sequi quis. Delectus maiores laborum dicta ullam fugit nulla quasi? Veniam nobis et voluptates dolore cupiditate amet, labore hic tempore maxime sapiente laboriosam odit nam impedit earum aperiam, maiores blanditiis eius. Voluptates! Perspiciatis voluptas explicabo, quaerat necessitatibus unde quae non distinctio culpa fuga quos nulla iste earum, quisquam corrupti inventore corporis error? Animi incidunt sed facere, suscipit officia autem ullam quaerat cum!",
+      "commments": [],
+      "questions": []
+    },
+    {
+      "id": 10,
+      "name": "Dire Hellebore",
+      "img": "/images/welcome-section-images/12.JPG",
+      "price": 120,
+      "off": 30,
+      "category": "apartment plant",
+      "size": "45 * 35",
+      "sutes": "apartment",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi blanditiis itaque libero odit nam reprehenderit reiciendis cum pariatur distinctio animi temporibus magnam accusamus amet placeat ab est harum quia. Illo exercitationem ipsum, pariatur nobis repellendus ea similique consequuntur minima illum iusto asperiores dolorum voluptatem sed commodi, modi odio sequi doloremque nostrum dolore earum maiores ducimus molestiae. Minima, sequi quis. Delectus maiores laborum dicta ullam fugit nulla quasi? Veniam nobis et voluptates dolore cupiditate amet, labore hic tempore maxime sapiente laboriosam odit nam impedit earum aperiam, maiores blanditiis eius. Voluptates! Perspiciatis voluptas explicabo, quaerat necessitatibus unde quae non distinctio culpa fuga quos nulla iste earum, quisquam corrupti inventore corporis error? Animi incidunt sed facere, suscipit officia autem ullam quaerat cum!",
+      "commments": [],
+      "questions": []
+    },
+    {
+      "id": 11,
+      "name": "Weeping Shadbush",
+      "img": "/images/welcome-section-images/13.JPG",
+      "price": 58,
+      "off": false,
+      "category": "apartment plant",
+      "size": "30 * 15",
+      "sutes": "apartment",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi blanditiis itaque libero odit nam reprehenderit reiciendis cum pariatur distinctio animi temporibus magnam accusamus amet placeat ab est harum quia. Illo exercitationem ipsum, pariatur nobis repellendus ea similique consequuntur minima illum iusto asperiores dolorum voluptatem sed commodi, modi odio sequi doloremque nostrum dolore earum maiores ducimus molestiae. Minima, sequi quis. Delectus maiores laborum dicta ullam fugit nulla quasi? Veniam nobis et voluptates dolore cupiditate amet, labore hic tempore maxime sapiente laboriosam odit nam impedit earum aperiam, maiores blanditiis eius. Voluptates! Perspiciatis voluptas explicabo, quaerat necessitatibus unde quae non distinctio culpa fuga quos nulla iste earum, quisquam corrupti inventore corporis error? Animi incidunt sed facere, suscipit officia autem ullam quaerat cum!",
+      "commments": [],
+      "questions": []
+    }
+  ],
+  "USERS": [
+    {
+      "id": 1,
+      "username": "arsi",
+      "email": "arsalanghoochani15@gmail.com",
+      "password": "arsalan-2003",
+      "isAdmin": false,
+      "createdAt": "2023-12-19T18:30:53.977Z"
+    },
+    {
+      "username": "arsi_bro",
+      "email": "arsalanghoochani15@gmail.com",
+      "password": "Arsalan20003",
+      "secPassword": "Arsalan20003",
+      "id": 2
+    },
+    {
+      "username": "dsadasdadasd",
+      "email": "sadi@gmail.com",
+      "password": "dsadadadsada",
+      "secPassword": "dsadadadsada",
+      "created_At": "2023-12-27T15:04:50.399Z",
+      "id": 3
+    },
+    {
+      "username": "dsadasdadasd",
+      "email": "sadi@gmail.com",
+      "password": "dsadadadsada",
+      "secPassword": "dsadadadsada",
+      "created_At": "2023-12-27T15:05:09.496Z",
+      "id": 4
+    },
+    {
+      "username": "83103100143786",
+      "email": "dsadsad@gmail.com",
+      "password": "arsi-2003",
+      "secPassword": "arsi-2003",
+      "created_At": "2023-12-27T15:05:39.478Z",
+      "id": 5
+    }
+  ],
+  "BASKET": []
+}
