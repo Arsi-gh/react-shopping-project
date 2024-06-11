@@ -5,7 +5,7 @@ export const Question = ({displayHandler}) => {
     return (
       <>
         <Background displayHandler={displayHandler}/>
-        <form className="flex flex-col p-4 gap-2 rounded-lg bg-neutral-200 fixed transform -translate-x-[50%] left-[50%] sm:top-[25%]  w-[25rem] max-sm:w-full  max-sm:bottom-0 max-sm:rounded-none max-sm:rounded-t-xl max-sm:p-4">
+        <form className="z-40 flex flex-col p-4 gap-2 rounded-lg bg-neutral-200 fixed transform -translate-x-1/2 left-1/2 sm:top-1/2 sm:-translate-y-1/2  w-[25rem] max-sm:w-full  max-sm:bottom-0 max-sm:rounded-none max-sm:rounded-t-xl max-sm:p-4">
           <div className="flex items-center justify-between">
             <h4 className="font-bold">Ask your question</h4>
             <XMarkIcon onClick={() => displayHandler(false)} className="w-[1.5rem] cursor-pointer"/>
